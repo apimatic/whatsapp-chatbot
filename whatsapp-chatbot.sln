@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "whatsapp-chatbot", "whatsapp-chatbot.csproj", "{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsAppCloudAPI.Standard", "WhatsApp+Cloud+API-CSharp (1)\WhatsAppCloudAPI.Standard\WhatsAppCloudAPI.Standard.csproj", "{6ED8ED1A-376E-4F16-A192-EF94052F54B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAIAPI.Standard", "OpenAI+API-CSharp (1)\OpenAIAPI.Standard\OpenAIAPI.Standard.csproj", "{237A00AE-B0FD-4A31-8C44-1BD33499BB89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB9D5AD2-91EE-4C09-8B7C-B709B5FC168A}
+	EndGlobalSection
+EndGlobal
