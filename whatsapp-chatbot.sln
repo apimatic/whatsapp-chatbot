@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "whatsapp-chatbot", "whatsapp-chatbot.csproj", "{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC8E3E64-C2ED-4B01-9CD2-524EC95DEAD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsAppCloudAPI.Standard", "WhatsApp+Cloud+API-CSharp (1)\WhatsAppCloudAPI.Standard\WhatsAppCloudAPI.Standard.csproj", "{6ED8ED1A-376E-4F16-A192-EF94052F54B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsappChatbot.Api", "src\WhatsappChatbot.Api\WhatsappChatbot.Api.csproj", "{77759B74-3235-44C5-94D8-BAF52DAE2758}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAIAPI.Standard", "OpenAI+API-CSharp (1)\OpenAIAPI.Standard\OpenAIAPI.Standard.csproj", "{237A00AE-B0FD-4A31-8C44-1BD33499BB89}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{8E8404A7-9561-481A-9536-B86217334800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAIAPI.Standard", "plugins\OpenAIAPI\OpenAIAPI.Standard\OpenAIAPI.Standard.csproj", "{D3AD5418-3746-4C41-B39D-5FB0BA7B8275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsAppCloudAPI.Standard", "plugins\WhatsAppCloudAPI\WhatsAppCloudAPI.Standard\WhatsAppCloudAPI.Standard.csproj", "{11E6FD85-D37C-49D7-B7AA-2E753B89BCB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,23 +19,28 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A7D7FD0-EA9C-4385-A5B2-8ED5C4263C32}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6ED8ED1A-376E-4F16-A192-EF94052F54B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{237A00AE-B0FD-4A31-8C44-1BD33499BB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77759B74-3235-44C5-94D8-BAF52DAE2758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77759B74-3235-44C5-94D8-BAF52DAE2758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77759B74-3235-44C5-94D8-BAF52DAE2758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77759B74-3235-44C5-94D8-BAF52DAE2758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AD5418-3746-4C41-B39D-5FB0BA7B8275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AD5418-3746-4C41-B39D-5FB0BA7B8275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AD5418-3746-4C41-B39D-5FB0BA7B8275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AD5418-3746-4C41-B39D-5FB0BA7B8275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E6FD85-D37C-49D7-B7AA-2E753B89BCB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E6FD85-D37C-49D7-B7AA-2E753B89BCB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E6FD85-D37C-49D7-B7AA-2E753B89BCB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E6FD85-D37C-49D7-B7AA-2E753B89BCB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB9D5AD2-91EE-4C09-8B7C-B709B5FC168A}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77759B74-3235-44C5-94D8-BAF52DAE2758} = {DC8E3E64-C2ED-4B01-9CD2-524EC95DEAD9}
+		{D3AD5418-3746-4C41-B39D-5FB0BA7B8275} = {8E8404A7-9561-481A-9536-B86217334800}
+		{11E6FD85-D37C-49D7-B7AA-2E753B89BCB3} = {8E8404A7-9561-481A-9536-B86217334800}
 	EndGlobalSection
 EndGlobal
