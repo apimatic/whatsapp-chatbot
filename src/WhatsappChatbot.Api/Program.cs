@@ -46,8 +46,7 @@ app.MapPost("api/Webhook", async (
 {
     foreach (var message in notification.EntryObject.SelectMany(entry =>
                  entry.Changes.SelectMany(change => change.Value.Messages)))
-    {
-        logger.LogInformation("Received message from {@Message}", message);
+    { 
         var responseText = await openAiApiService.CreateCompletion(message.Text.Body);
         await whatsappCloudService.SendTextMessage(responseText, message.From);
     }
